@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Segunda Pre-Entrega</title>
+</head>
+<body>
+    <html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Producto</title>
+</head>
+<body>
+    <h1 class="tittle">Crear Producto</h1>
+<section class="container">
+    <form id="formularioProducto" class="form">
+        <label for="identifier">Identificador:</label>
+        <input type="text" id="identifier" name="identifier" required><br><br>
+        
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" name="marca" required><br><br>
+        
+        <label for="descripcion">Descripción:</label><br>
+        <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" name="precio" step="0.01" required><br><br>
+        
+        <label for="existencias">Existencias:</label>
+        <input type="number" id="existencias" name="existencias" required><br><br>
+        
+        <label for="categoria">Categoría:</label>
+        <input type="text" id="categoria" name="categoria" required><br><br>
+        
+        <button type="submit">Crear Producto</button>
+        <button onclick="verUltimoProducto()">Ver Ultimo Producto Agregado</button>
+        <button onclick="mostrarProducto()">Ver Producto a Eleccion</button>
+        <button onclick="mostrarProductosPorMarca()">Mostrar Productos por Marca</button>
+        <button onclick="mostrarProductosPorCategoria()">Mostrar Productos por Categoria</button>
+    </form>
+</section>
+
+    <footer>
+        <h3> Santiago Wengorra | Javascript | Segunda Pre-Entrega</h3>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
